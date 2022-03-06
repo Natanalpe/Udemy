@@ -14,7 +14,7 @@ const cliente = {
     peso: 123,
     endereco: {
         logradouro: 'ali',
-        numero: '42'
+        numero: '42'    
     }
 }
 
