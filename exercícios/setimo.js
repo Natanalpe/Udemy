@@ -16,9 +16,11 @@ function bhaskara(ax2, bx, c) {
     //verificando e trocando o sinal caso A, B ou C sejam negativos.
     if(ax2 < 0) {
         ax2 = ax2 * -1
-    } else if (bx < 0) {
+    }
+    if (bx < 0) {
         bx = bx * -1
-    } else if(c < 0) {
+    }
+    if(c < 0) {
         c = c * -1
     }
 
