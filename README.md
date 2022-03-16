@@ -1,6 +1,6 @@
 # Repositório criado para o Curso 'Curso Web Moderno Completo com JavaScript 2021 + Projetos'
 
-# Coteudo: 
+# Conteudo: 
 ## Recursos
 - HTML
 - CSS
