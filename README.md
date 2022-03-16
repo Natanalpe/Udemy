@@ -8,7 +8,7 @@
 
 ## Estilos
 - CSS Grid
-- Flebox
+- Flexbox
 
 ## Os últimos recursos do Javascript:
 - ES2015
