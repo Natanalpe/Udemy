@@ -11,3 +11,4 @@ console.log(falarDepoisDe(3, 'Que legal!')
     .then(outraFrase => console.log(outraFrase))
     .catch(e => console.log(e))
     )
+
