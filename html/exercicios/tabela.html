@@ -1,0 +1,57 @@
+<div>
+    <table>
+        <caption>Produtos</caption>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>iPad</td>
+                <td>3289,00</td>
+                <td>5</td>
+                <td>16445,00</td>
+            </tr>
+            <tr>
+                <td>Sansung S9</td>
+                <td>2649,00</td>
+                <td>8</td>
+                <td>21192,00</td> 
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>37637,00</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<style>
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 1rem;
+    }
+    thead tr {
+        border-bottom: solid 3px grey;
+    }
+    tbody tr:hover {
+        background-color: rgb(209, 209, 209);
+    }
+    tfoot {
+        background-color: rgb(143, 142, 142);
+        color: white;
+        font-weight: bold;
+    }
+</style>

@@ -1,0 +1,36 @@
+<style>
+    hr {
+        width: 85vw;
+        margin-left: 0;
+    }
+    html {
+	scroll-behavior: smooth;
+    }
+    #btn-noticia {
+        padding-bottom: 50px;
+    }
+
+</style>
+<h1 id="title">Links</h1>
+
+<!-- URL absoluto -->
+<a href="http://www.google.com.br">Google 1</a><br>
+<a href="http://www.google.com.br" target="_blank">Google 2</a>
+<hr>
+
+<!-- URL Relativa -->
+<a href="index.html">Voltar 1</a><br>
+<a href="/index.html">Voltar 2</a><br>
+<a href="../index.html">Voltar 3</a><br>
+<a href="./index.html">Voltar 4</a>
+
+<hr>
+
+<a id="mail" href="mailto:email@hotmail.com">Enviar E-mail</a><br>
+<hr>
+<div id="noticia" style="position:absolute;top:2000px;">
+    <h1>Notícia Buemba!</h1>
+    <p>Não era nada...</p>
+    <a id="btn-noticia" href="#title">Voltar ao topo</a>
+</div>
+<a href="#noticia">Ir à notícia</a>
