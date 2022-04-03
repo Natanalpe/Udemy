@@ -10,11 +10,69 @@
         * {
             margin: 0;
         }
+        html {
+            font-size: 28px;
+        }
 
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        div {
+            font-size: 50px;    
+        }
+        p {
+            /* Valores padrões */
+            font-size: 1em; /* uma vez o tamanho padrão */
+            font-size: 100%;/* 1/1 do tamanho da propria fonte */
+            font-size: 16px;
+            font-size: 12pt;
+
+            /* unidades absolutas */
+            font-size: 100px; /* tamanho do pixel é relativo */
+            font-size: 72pt; /* pontos */
+            font-size: 1in; /* polegada */
+        
+            /* unidades relativas */
+            font-size: 2.2em; /* vai pegar a referencia de fonte mais próxima
+                                , no caso é a div */
+            font-size: 2.2rem; /* pegara o tamanho padrão
+                                do browser e mltiplicara por 28px(definido acima no HTML) * 2.2 */
+            font-size: 50vh;
+            font-size: 10vw;
+
+            font-family: monospace;
+            font-family: georgia, serif;/* ira procura o georgia, caso não ache ira próximo valor(serif) */
+            font-family: Verdana, sans-serif;
+            font-family: cursive;
+
+            font-weight: 100;
+            /* font-weight: bold;
+            font-weight: bolder; */
+            font-style: italic;
+            text-transform: uppercase;
+            text-decoration: overline, underline, line-through;
+            word-spacing: 10px;
+            letter-spacing: 20px;
+            line-height: 2.5;
+            text-align: right;
+        }
+
+        .botao {
+            font-size: 28px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+        .destaque {
+            color: white;
+            background: tomato;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+        .destaque:active {
+                box-shadow: none;
         }
     </style>
 </head>

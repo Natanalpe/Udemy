@@ -5,7 +5,71 @@
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
-        /* ... */
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap');
+
+        .curso {
+            display: grid;
+            height: 300px;
+            width: 240px;
+            box-shadow: 1px 1px 12px rgb(68, 68, 68);
+            padding: 4px;
+        }
+
+        .curso img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        body div {
+            display: flex;
+            margin: 15px;
+        }
+
+        s .preco-de {
+            color: #bc3739;
+            font-weight: bolder;
+            font-size: 90%;
+            font-weight: lighter;
+        }
+
+        span {
+            font-family: 'Rubik', sans-serif;
+            margin: 2px;
+        }
+
+        .curso-info {
+            margin: 0;
+            display: grid;
+            line-height: 90%;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .preco-por {
+            color: #008002;
+            font-size: 110%;
+        }
+
+        h4 {
+            max-height: 50px;
+            min-height: 50px;
+            margin: 10px;
+        }
+
+        p {
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        .curso-preco {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .curso:hover {
+            transition: .2s;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 
@@ -24,7 +88,7 @@
                 <p>Prof. Fulano</p>
             </div>
             <div class="curso-preco">
-                <span class="preco-de">R$80,00</span>
+                <s><span class="preco-de">R$80,00</span></s>
                 <span class="preco-por">R$50,00</span>
             </div>
         </div>
@@ -35,7 +99,7 @@
                 <p>Prof. Sicrano Filho</p>
             </div>
             <div class="curso-preco">
-                <span class="preco-de">R$80,00</span>
+                <s><span class="preco-de">R$80,00</span></s>
                 <span class="preco-por">R$50,00</span>
             </div>
         </div>
