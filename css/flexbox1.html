@@ -6,7 +6,49 @@
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .big {
+            font-size: 1.5em;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column; /* ficara em coluna */
+            flex-direction: column-reverse; /* ficara em coluna porem ao contrario */
+            flex-direction: row-reverse; /* ficara como flex(links) porem na direita*/
+            flex-direction: row; /* em linha da esquerda par a direita */
+            width: 20%; /* a qui os número ficarão para fora da div pai */
+            flex-wrap: wrap; /* fazendo isso, ele quebrara a linha e a div pai de adaptara aos filhos */
+            flex-wrap: wrap-reverse; /* aqui a linha de baixo ira para cima e a de cima ira para baixo */
+            flex-flow: row wrap;
+            flex-flow: column-reverse wrap;
+            height: 200px; /* com a altura limitaa a 200px, as divs filhas quebrarão em várias linhas e se
+            adaptarão ao espaço, alem de adaptarem o seu prorpio tamanho */
+            flex-flow: row wrap;
+
+            justify-content: flex-start; /* a esquerda */
+            justify-content: flex-end; /* a direita */
+            justify-content: center; /* todos os items, inclusive os que tem quebra de linha
+            se alinharão horizontalmente no centro */
+            justify-content: space-around; /* todos os items de moverão para ocuparem o
+            mesmo tamanho de espaço, ou seja, havera uma distribuição uniforme no espaço */
+            justify-content: space-between; /* é um pouco diferente do de cima. Nesse
+            ainda havera um espaço dividindo os items, porem não havera este esapço nas pontas dos items */
+
+
+            /* Cross Axis */
+            height: 400px;
+            align-items: stretch;
+            align-items: baseline;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            
+            /* Mais de uma linha */
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+        }
     </style>
 </head>
 

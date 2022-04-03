@@ -11,7 +11,7 @@
             height: calc(100% - 40px);
             background-color: lightgray;
         }
-        
+
         div {
             display: flex;
             align-items: center;
@@ -19,6 +19,32 @@
             font-size: 30px;
             border: solid 5px dodgerblue;
             background: #fff;
+        }
+
+        /* 
+        grid-column-gap     =>          column-gap
+        grid-row-gap        =>          row-gap
+        grid-gap            =>          gap
+        */
+
+        body {
+            display: grid;
+            grid-template-columns: [inicio] 1fr [metade-1] 1fr [metade-2] 1fr [fim];
+            grid-template-rows: repeat(3, 1fr);
+
+            column-gap: 20px; /* espaçamento entre colunas */
+            row-gap: 20px; /* espaçamento entre linhas */
+            gap: 50px 10px; /* os dois acima de uma vez */
+            gap: 20px; /* também pode-se usar um unico valor para tudo */
+        }
+        .d1 {
+            grid-column-start: metade-2;
+            grid-column-end: fim;
+            grid-column: metade-1 / fim;
+            grid-row: 1 / span 2;
+            /* row-start column-start row-end column-end */
+            grid-area: 1 / metade-1 / span 3 / fim;
+
         }
     </style>
 </head>
