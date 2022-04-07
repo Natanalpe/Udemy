@@ -1,14 +1,17 @@
-* {
-    box-sizing: border-box;
-}
 @font-face {
     font-family: 'Pixel';
     src: url(../fonts/Pixel.ttf)
 }
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
 h1 {
+    height: 45px;
     font-family: 'Pixel';
     font-size: 40px;
 }
+
 [wm-flappy] {
     position: relative;
     border: 5px solid dodgerblue;
@@ -59,4 +62,33 @@ h1 {
     font-family: 'Pixel';
     font-size: 45px;
     z-index: 10;
+}
+.reload-btn {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reload-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+#bg {
+    position: absolute;
+    z-index: -10;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    filter: brightness(50%);
 }

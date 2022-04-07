@@ -1,3 +1,4 @@
+// função criar elemento em no HTML
 function novoElemento(tagName, className) {
     const elem = document.createElement(tagName)
     elem.className = className
@@ -147,6 +148,12 @@ function colidiu(passaro, barreiras) {
     })
     return colidiu
 }
+
+const reloadButton = document.querySelector('.reload-btn')
+reloadButton.addEventListener('click', () => {
+    location.reload()
+})
+
 
 function FlappyBird() {
     let pontos = 0
