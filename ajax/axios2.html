@@ -14,6 +14,22 @@
     <div id="post"></div>
 
     <script>
-        // ...
+        function exibirResultasdo(id, dados) {
+            const texto = JSON.stringify(dados)
+            document.getElementById(id).innerHTML = texto
+        }
+
+        // tambpem funcionario por que está como query no server
+        // axios('parOuImpar?numero=7').then(resp => exibirResultasdo('get', resp.data))
+        axios.get('parOuImpar', {
+            params: {
+                numero: 6
+            }
+        }).then(resp => exibirResultasdo('get', resp.data))
+
+        axios.post('formulario', {
+            nome: 'João',
+            sobrenome: 'Silva'
+        }).then(resp => exibirResultasdo('post', resp.data))
     </script>
 </body>
