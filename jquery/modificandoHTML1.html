@@ -13,8 +13,40 @@
     <div id='conteudo1'></div>
     <div id='conteudo2'></div>
     <div id='conteudo3'></div>
+    <div>Sem ID!</div>
 
     <script>
-        // ...
-    </script>
+        // Conteúdo 1
+        $('#conteudo1').append('<p>1</p>')
+        
+        // Conteúdo 2
+        const elementos = [
+            $('<li></li>').append('Arroz'),
+            $('<li>').append('Feijão'),
+            $('<li>').append('Carne'),
+        ]
+
+                // pre -> antes
+        const lista = $('<ul><li>Sorvete</li></ul>').prepend(elementos)
+        $('#conteudo2').append(lista)
+
+        // Conteúdo 3
+                // Também poderiam ser separados por vírgula
+                // od 'h1' ao inves de colocar varios 'append'
+        $('#conteudo3').append('<h1>1</h1>')
+                .append('<h1>2</h1>').prepend('<h1>0</h1>')
+
+                // o 'html' substitui o elemento em questão
+        $('#conteudo3').html('<h1>123</h1>')
+
+                // exibira exatamete o que tem dentro de 'text'
+                // sendo assim ele renderizara o '<h1>' também
+        $('#conteudo3').text('<h1>123</h1>')
+
+        // Alterando todos
+                    // Como está setado com o [id]
+                    // alterara somente as divs quem tem id
+        $('div[id]').html('<strong>Todos!</strong>')
+
+</script>
 </body>
