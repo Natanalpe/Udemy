@@ -3,8 +3,14 @@
 export default function handler(req, res) {
   res.status(200).json(
     {
-      name: 'John Doe',
-      email: 'email@email.com'
+      name: 'Teste Api',
+      metodo: req.method,
+      nome: req.query.nome,
+      idade: +req.query.idade
     }
   )
 }
+
+// ou
+// params: JSON.stringify(req.query)
+// para pegar os parametros de uma unica vez
