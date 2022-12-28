@@ -1,7 +1,5 @@
-import Titulo from "./Titulo"
+import Titulo from "./Titulo";
 
-// Irá exigir obrigatorimente que se passe
-// as props dentro de LayoutProps
 interface LayoutProps {
     titulo: string
     children: any
@@ -14,7 +12,7 @@ export default function Layout(props: LayoutProps) {
             bg-white text-gray-800 rounded-md
         `}>
             <Titulo>{props.titulo}</Titulo>
-            <div className="p-6 m-">
+            <div className="p-6">
                 {props.children}
             </div>
         </div>

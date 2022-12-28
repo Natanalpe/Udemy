@@ -10,7 +10,6 @@ interface FormularioProps {
 }
 
 export default function Formulario(props: FormularioProps) {
-
     const id = props.cliente?.id
     const [nome, setNome] = useState(props.cliente?.nome ?? '')
     const [idade, setIdade] = useState(props.cliente?.idade ?? 0)
@@ -22,14 +21,14 @@ export default function Formulario(props: FormularioProps) {
                     somenteLeitura
                     texto="Código"
                     valor={id}
-                    className="mb-4"
+                    className="mb-5"
                 />
             ) : false}
-            <Entrada
-                texto="nome"
+            <Entrada 
+                texto="Nome"
                 valor={nome}
                 valorMudou={setNome}
-                className="mb-4"
+                className="mb-5"
             />
             <Entrada
                 texto="Idade"
